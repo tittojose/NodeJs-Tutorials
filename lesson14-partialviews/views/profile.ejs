@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <% include partials/nav.ejs %>
+        <h1>Welcome <%= name %></h1>
+         <h3>Welcome <%= details.age %></h3>
+          <h3>Welcome <%= details.hobbies %></h3>
+           <ul>
+            <% details.hobbies.forEach(function(item){ %>
+                <li> <%= item %> </li>
+           <% }) %>
+           </ul>
+    </body>
+</html>
